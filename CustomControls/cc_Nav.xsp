@@ -1,16 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex">
-<xe:navigator id="navigator1">
-				<xe:this.treeNodes>
-					<xe:pageTreeNode label="Home" page="/home.xsp"></xe:pageTreeNode>
-					<xe:separatorTreeNode></xe:separatorTreeNode>
-					<xe:basicContainerNode label="Config tips">
-						<xe:this.children>
-							<xe:pageTreeNode label="Source Control"
-								page="/sourceControl.xsp">
-							</xe:pageTreeNode>
-						</xe:this.children>
-					</xe:basicContainerNode>
-				</xe:this.treeNodes>
-			</xe:navigator>
+	<xe:navigator id="navigator1">
+		<xe:this.treeNodes>
+			<xe:pageTreeNode label="Home" page="/home.xsp"></xe:pageTreeNode>
+			<xe:separatorTreeNode></xe:separatorTreeNode>
+			<xe:basicContainerNode label="Config Tips">
+				<xe:this.children>
+					<xe:pageTreeNode label="Source Control"
+						page="/sourceControl.xsp">
+					</xe:pageTreeNode>
+				</xe:this.children>
+			</xe:basicContainerNode>
+			<xe:basicContainerNode label="Client Side Tips">
+				<xe:this.children>
+					<xe:pageTreeNode label="Meta Tags"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Type Property"></xe:pageTreeNode>
+					<xe:pageTreeNode label="jQuery"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Bootstrap"></xe:pageTreeNode>
+					<xe:pageTreeNode label="EL App Layout"></xe:pageTreeNode>
+				</xe:this.children>
+			</xe:basicContainerNode>
+			<xe:basicContainerNode label="Server Side Tips">
+				<xe:this.children>
+					<xe:pageTreeNode label="Themes - field"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Themes - Sub Types"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Themes = <body>"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Attributes"></xe:pageTreeNode>
+					<xe:pageTreeNode label="TagName"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Document Locking"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Expression Language"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Managed Beans"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Faces Message"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Custom Validators"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Apache Commons"></xe:pageTreeNode>
+				</xe:this.children>
+			</xe:basicContainerNode>
+			<xe:basicContainerNode label="Debugging Tips">
+				<xe:this.children>
+					<xe:pageTreeNode label="Pasting Code"></xe:pageTreeNode>
+				</xe:this.children></xe:basicContainerNode>
+		</xe:this.treeNodes>
+	</xe:navigator>
 </xp:view>
