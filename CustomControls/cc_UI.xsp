@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex">
+
+	
+	<xe:applicationLayout id="applicationLayout1">
+		<xp:callback facetName="facetMiddle" id="facetMiddle"></xp:callback>
+		<xp:this.facets>
+			<xe:navigator id="navigator1" xp:key="LeftColumn">
+				<xe:this.treeNodes>
+					<xe:pageTreeNode label="Home" page="/home.xsp"></xe:pageTreeNode>
+					<xe:separatorTreeNode></xe:separatorTreeNode>
+					<xe:basicContainerNode label="Config tips">
+						<xe:this.children>
+							<xe:pageTreeNode label="Source Control"
+								page="/sourceControl.xsp">
+							</xe:pageTreeNode>
+						</xe:this.children>
+					</xe:basicContainerNode>
+				</xe:this.treeNodes>
+			</xe:navigator>
+
+		</xp:this.facets>
+		<xe:this.configuration>
+			<xe:oneuiApplication productLogo="/social.jpg"
+				titleBarName="Welcome to XPages Blast 2013">
+				<xe:this.footerLinks>
+
+
+				</xe:this.footerLinks>
+				<xe:this.legalText><![CDATA[(C) 2012-2013 TC Soft Cunsulting Limited & Fynn Consulting Limited. Published under a creative commons licence.]]></xe:this.legalText>
+			</xe:oneuiApplication>
+		</xe:this.configuration>
+	</xe:applicationLayout></xp:view>

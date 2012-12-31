@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<xp:label id="label1" style="width:auto;height:100px">
+		<xp:this.value><![CDATA[Acts as a great backup tool for you
+Even if you don’t have a team Repository, set up a local one
+We use Github, allows for better team development
+Set up Source Control for the application and choose a disk location
+Then set up the Github project
+Link the two by creating a new Git project in the same disk location
+Video of how to set it all up at]]></xp:this.value>
+	</xp:label>
+<br></br>
+	<xp:link escape="true" text="http://bit.ly/xpb_github" id="link1"
+		value="http://bit.ly/xpb_github" target="_blank"></xp:link>
+<br></br>
+	<xp:label id="label2">
+		<xp:this.value><![CDATA[We use a client to control the Committing, rollbacks etc, but command line works equally well]]></xp:this.value>
+	</xp:label>
+</xp:view>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<xp:label id="label1" style="height:49.0px">
+		<xp:this.value><![CDATA[Welcome to the XPages Blast 2013 helper application.
+This application is brought to you by;]]></xp:this.value>
+	</xp:label>
+	<xp:br></xp:br>
+	<xp:link escape="true" text="Tim Clark - TC Soft Consulting Limited" id="link1" target="_blank" value="http://www.tc-soft.com"></xp:link>
+	<xp:br></xp:br>
+	<xp:label value="and" id="label2"></xp:label>
+	<xp:br></xp:br>
+	<xp:link escape="true" text="Matt White - Fynn Consulting Limited" id="link2" target="_blank" value="http://www.mattwhite.me"></xp:link></xp:view>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	
+	<xc:cc_UI><xp:this.facets>
+	<xc:cc_sourceControl xp:key="facetMiddle"></xc:cc_sourceControl></xp:this.facets></xc:cc_UI></xp:view>
