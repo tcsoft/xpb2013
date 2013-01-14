@@ -17,28 +17,54 @@
 			</xe:basicContainerNode>
 			<xe:basicContainerNode label="Client Side Tips">
 				<xe:this.children>
-					<xe:pageTreeNode label="Meta Tags"></xe:pageTreeNode>
-					<xe:pageTreeNode label="Type Property"></xe:pageTreeNode>
-					<xe:pageTreeNode label="jQuery"></xe:pageTreeNode>
-					<xe:pageTreeNode label="Bootstrap"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Meta Tags"
+						page="/thinkMoboleMetaTags.xsp">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode label="Type Property"
+						page="/thinkMobileFieldType.xsp">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode label="jQuery"
+						page="/usejQuery.xsp">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode label="Bootstrap"
+						page="/bootstrap.xsp">
+					</xe:pageTreeNode>
 					<xe:pageTreeNode label="EL App Layout"></xe:pageTreeNode>
 				</xe:this.children>
 			</xe:basicContainerNode>
 			<xe:basicContainerNode label="Server Side Tips">
 				<xe:this.children>
-					<xe:pageTreeNode label="Themes - field"></xe:pageTreeNode>
-					<xe:pageTreeNode label="Themes - Sub Types"></xe:pageTreeNode>
-					<xe:pageTreeNode label="Themes - body"></xe:pageTreeNode>
-					<xe:pageTreeNode label="Attributes"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Themes - field"
+						page="/theme.xsp">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode label="Themes - Sub Types"
+						page="/theme.xsp">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode label="Themes - body"
+						page="/theme.xsp">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode label="Attributes"
+						page="/attributes.xsp">
+					</xe:pageTreeNode>
 					<xe:pageTreeNode label="TagName"></xe:pageTreeNode>
-					<xe:pageTreeNode label="Document Locking"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Document Locking"
+						page="/documentLockingDemo.xsp">
+					</xe:pageTreeNode>
 					<xe:pageTreeNode label="Expression Language"
 						page="/expressionLanguage.xsp">
 					</xe:pageTreeNode>
-					<xe:pageTreeNode label="Managed Beans"></xe:pageTreeNode>
-					<xe:pageTreeNode label="Faces Message"></xe:pageTreeNode>
-					<xe:pageTreeNode label="Custom Validators"></xe:pageTreeNode>
-					<xe:pageTreeNode label="Apache Commons"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Managed Beans"
+						page="/managedBeans.xsp">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode label="Faces Message"
+						page="/facesMessage.xsp">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode label="Custom Validators"
+						page="/customValidators.xsp">
+					</xe:pageTreeNode>
+					<xe:pageTreeNode label="Apache Commons"
+						page="/apacheCommons.xsp">
+					</xe:pageTreeNode>
 				</xe:this.children>
 			</xe:basicContainerNode>
 			<xe:basicContainerNode label="Debugging Tips">
