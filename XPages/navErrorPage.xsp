@@ -3,7 +3,10 @@
 
 	<xc:cc_UI>
 		<xp:this.facets>
-			<xc:cc_Nav_error xp:key="facetMiddle"></xc:cc_Nav_error>
+			<xp:panel xp:key="facetMiddle">
+				<h2>Nav Error</h2>
+				To see the code pasting error goto the custom control called cc_Nav_error
+			</xp:panel>
 		</xp:this.facets>
 	</xc:cc_UI>
 </xp:view>
