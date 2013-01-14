@@ -18,35 +18,28 @@
 			<xe:basicContainerNode label="Client Side Tips">
 				<xe:this.children>
 					<xe:pageTreeNode label="Meta Tags"
-						page="/thinkMoboleMetaTags.xsp">
+						page="/thinkMobileMetaTags.xsp">
 					</xe:pageTreeNode>
 					<xe:pageTreeNode label="Type Property"
 						page="/thinkMobileFieldType.xsp">
 					</xe:pageTreeNode>
 					<xe:pageTreeNode label="jQuery"
-						page="/usejQuery.xsp">
+						page="/jQuery.xsp">
 					</xe:pageTreeNode>
 					<xe:pageTreeNode label="Bootstrap"
 						page="/bootstrap.xsp">
 					</xe:pageTreeNode>
-					<xe:pageTreeNode label="EL App Layout"></xe:pageTreeNode>
+					<xe:pageTreeNode label="App Layout" page="/appLayout.xsp"></xe:pageTreeNode>
 				</xe:this.children>
 			</xe:basicContainerNode>
 			<xe:basicContainerNode label="Server Side Tips">
 				<xe:this.children>
-					<xe:pageTreeNode label="Themes - field"
-						page="/theme.xsp">
-					</xe:pageTreeNode>
-					<xe:pageTreeNode label="Themes - Sub Types"
-						page="/theme.xsp">
-					</xe:pageTreeNode>
-					<xe:pageTreeNode label="Themes - body"
+					<xe:pageTreeNode label="Themes"
 						page="/theme.xsp">
 					</xe:pageTreeNode>
 					<xe:pageTreeNode label="Attributes"
 						page="/attributes.xsp">
 					</xe:pageTreeNode>
-					<xe:pageTreeNode label="TagName"></xe:pageTreeNode>
 					<xe:pageTreeNode label="Document Locking"
 						page="/documentLockingDemo.xsp">
 					</xe:pageTreeNode>
@@ -69,7 +62,7 @@
 			</xe:basicContainerNode>
 			<xe:basicContainerNode label="Debugging Tips">
 				<xe:this.children>
-					<xe:pageTreeNode label="Pasting Code"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Pasting Code" page="/navErrorPage.xsp"></xe:pageTreeNode>
 				</xe:this.children>
 			</xe:basicContainerNode>
 		</xe:this.treeNodes>

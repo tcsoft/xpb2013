@@ -3,7 +3,10 @@
 
 	<xc:cc_UI>
 		<xp:this.facets>
-			<xc:cc_Nav_error xp:key="facetMiddle"></xc:cc_Nav_error>
+			<xp:panel xp:key="facetMiddle">
+				<h2>App Layout</h2>
+				<p>This whole application is using the application layout control. See cc_UI for more detail on how it's configured.</p>
+			</xp:panel>
 		</xp:this.facets>
 	</xc:cc_UI>
 </xp:view>

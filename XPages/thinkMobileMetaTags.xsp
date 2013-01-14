@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	<xc:cc_UI>
+		<xp:this.facets>
+			<xp:panel xp:key="facetMiddle">
+				<h2>Mobile Meta Tags</h2>
+				Open this page in iOS and the page should be zoomed in and allow you to add it to your home page. This is thanks to the meta tags set in the resources of cc_UI.
+			</xp:panel>
+		</xp:this.facets>
+	</xc:cc_UI>
+</xp:view>

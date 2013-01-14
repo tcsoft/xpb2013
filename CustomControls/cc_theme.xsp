@@ -4,4 +4,5 @@
 	With the xpb.small theme id:<xp:inputText id="inputText1" themeId="xpb.small"></xp:inputText>
 	<xp:br></xp:br>Without the xpb.small theme id:&#160;
 
-	<xp:inputText id="inputText2"></xp:inputText></xp:view>
+	<xp:inputText id="inputText2"></xp:inputText>
+	<xp:br></xp:br>This is all defined in the theme called xpb</xp:view>
