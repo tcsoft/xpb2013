@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+	<xp:text tagName="h2" id="title"
+		value="#{javascript:compositeData.title}">
+	</xp:text>
+	To see it in action more details visit the demo &#160;
+	<a href="http://londondevelopercoop.com/uklug/uklug.nsf">UKLUG site</a>
+</xp:view>
