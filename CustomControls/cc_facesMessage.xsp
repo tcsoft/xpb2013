@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<xp:button value="Add a message to the Display Errors" id="button1">
+		<xp:eventHandler event="onclick" submit="true"
+			refreshMode="complete">
+			<xp:this.action><![CDATA[#{javascript:var text = "The time is " + @Now();
+var message = new javax.faces.application.FacesMessage(text);
+facesContext.addMessage(null, message);}]]></xp:this.action>
+		</xp:eventHandler></xp:button>
+	<xp:br></xp:br>
+	<xp:messages id="messages1"></xp:messages></xp:view>
