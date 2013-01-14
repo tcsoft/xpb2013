@@ -5,9 +5,9 @@
     <default-prefix>xc</default-prefix>
   </faces-config-extension>
   <composite-component>
-    <component-type>cc_MetaTags</component-type>
-    <composite-name>cc_MetaTags</composite-name>
-    <composite-file>/cc_MetaTags.xsp</composite-file>
+    <component-type>cc_expressionLanguage</component-type>
+    <composite-name>cc_expressionLanguage</composite-name>
+    <composite-file>/cc_expressionLanguage.xsp</composite-file>
     <composite-extension>
       <designer-extension>
         <in-palette>true</in-palette>

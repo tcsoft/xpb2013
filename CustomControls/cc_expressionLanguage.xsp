@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<xp:this.data>
+		<xp:dominoDocument var="document1" formName="Employee"
+			action="openDocument">
+		</xp:dominoDocument>
+	</xp:this.data>
+	document1.Name<xp:br></xp:br>Name&#160;=
+	<xp:text escape="true" id="computedField2" value="#{document1.Name}"></xp:text>
+	<xp:br></xp:br>
+	<xp:br></xp:br>#{document1.Name} #{javascript:docuemtn1.getItemValueSring(&quot;Email&quot;)}
+	<xp:br></xp:br>
+	Name and Email =&#160;<xp:text escape="true" id="computedField1"><xp:this.value><![CDATA[#{document1.Name} #{javascript:documente1.getItemValueSring("Email")}]]></xp:this.value></xp:text></xp:view>
