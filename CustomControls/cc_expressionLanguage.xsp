@@ -6,9 +6,12 @@
 			action="openDocument">
 		</xp:dominoDocument>
 	</xp:this.data>
-	document1.Name<xp:br></xp:br>Name&#160;=
+	document1.Name<xp:br></xp:br>Name =
 	<xp:text escape="true" id="computedField2" value="#{document1.Name}"></xp:text>
 	<xp:br></xp:br>
-	<xp:br></xp:br>#{document1.Name} #{javascript:docuemtn1.getItemValueSring(&quot;Email&quot;)}
+	<xp:br></xp:br>#{document1.Name} #{javascript:document1.getItemValueSring(&quot;Email&quot;)}
 	<xp:br></xp:br>
-	Name and Email =&#160;<xp:text escape="true" id="computedField1"><xp:this.value><![CDATA[#{document1.Name} #{javascript:documente1.getItemValueSring("Email")}]]></xp:this.value></xp:text></xp:view>
+	Name and Email =
+	<xp:text escape="true" id="computedField1">
+		<xp:this.value><![CDATA[#{document1.Name} #{javascript:document1.getItemValueString("Email")}]]></xp:this.value>
+	</xp:text></xp:view>

@@ -32,7 +32,9 @@
 					<xe:pageTreeNode label="Attributes"></xe:pageTreeNode>
 					<xe:pageTreeNode label="TagName"></xe:pageTreeNode>
 					<xe:pageTreeNode label="Document Locking"></xe:pageTreeNode>
-					<xe:pageTreeNode label="Expression Language"></xe:pageTreeNode>
+					<xe:pageTreeNode label="Expression Language"
+						page="/expressionLanguage.xsp">
+					</xe:pageTreeNode>
 					<xe:pageTreeNode label="Managed Beans"></xe:pageTreeNode>
 					<xe:pageTreeNode label="Faces Message"></xe:pageTreeNode>
 					<xe:pageTreeNode label="Custom Validators"></xe:pageTreeNode>
