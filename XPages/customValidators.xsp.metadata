@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="80257ADA003685A6" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="40e" sequence="2" unid="4765AD90544C9EAB80257AF300472A62">
+<created><datetime>20130114T125719,06+00</datetime></created>
+<modified><datetime>20130114T125719,09+00</datetime></modified>
+<revised><datetime>20130114T125719,08+00</datetime></revised>
+<lastaccessed><datetime>20130114T125719,09+00</datetime></lastaccessed>
+<addedtofile><datetime>20130114T125719,07+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Tim Clark/O=tcsoft</name></updatedby>
+<wassignedby><name>CN=Tim Clark/O=tcsoft</name></wassignedby>
+<item name="$Flags"><text>gC~4K</text></item>
+<item name="$TITLE"><text>customValidators.xsp</text></item>
+
+
+<item name="$FileNames" sign="true"><text>customValidators.xsp</text></item></note>
