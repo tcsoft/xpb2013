@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<h2>Attributes</h2>
+	<xp:panel tagName="a">
+		<xp:this.attrs>
+			<xp:attr name="href" value="http://google.com"></xp:attr>
+		</xp:this.attrs>
+		This link to Google is created using attributes on a panel control
+	</xp:panel>
+</xp:view>
