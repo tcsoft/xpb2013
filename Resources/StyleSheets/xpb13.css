@@ -5,3 +5,9 @@ margin-left:15px;
 .alert{
 	color: red;
 }
+.computedText {
+	font-weight:bold;
+	color:rgb(0,0,255);
+	font-family:Arial Black,sans-serif;
+	font-size:12pt
+}
