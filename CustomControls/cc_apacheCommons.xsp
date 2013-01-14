@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<xp:inputText id="emailaddress" value="#{applicationScope.emailaddress}">
+		<xp:this.validators>
+			<xp:validator validatorId="EmailValidator"></xp:validator>
+		</xp:this.validators>
+	</xp:inputText>
+	<xp:button value="Submit" id="button1">
+		<xp:eventHandler event="onclick" submit="true"
+			refreshMode="complete" immediate="false" save="true"></xp:eventHandler>
+	</xp:button>
+	<xp:messages id="messages1"></xp:messages>
+</xp:view>
