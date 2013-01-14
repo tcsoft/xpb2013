@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<xp:this.data>
+		<xp:dominoDocument var="document1" formName="Employee"></xp:dominoDocument>
+	</xp:this.data>
+	<xp:table>
+		<xp:tr>
+			<xp:td>
+				<xp:label value="Name:" id="name_Label1" for="name1"></xp:label>
+			</xp:td>
+			<xp:td>
+				<xp:inputText value="#{document1.Name}" id="name1"></xp:inputText>
+			</xp:td>
+		</xp:tr>
+		<xp:tr>
+			<xp:td>
+				<xp:label value="Email:" id="email_Label1"
+					for="email1">
+				</xp:label>
+			</xp:td>
+			<xp:td>
+				<xp:inputText value="#{document1.Email}" id="email1"
+					type="email">
+				</xp:inputText>
+			</xp:td>
+		</xp:tr>
+		<xp:tr>
+			<xp:td>
+				<xp:label value="Telephone:" id="telephone_Label1"
+					for="telephone1">
+				</xp:label>
+			</xp:td>
+			<xp:td>
+				<xp:inputText value="#{document1.Telephone}"
+					id="telephone1" type="tel">
+				</xp:inputText>
+			</xp:td>
+		</xp:tr>
+		<xp:tr>
+			<xp:td>
+				<xp:label value="Address:" id="address_Label1"
+					for="address1">
+				</xp:label>
+			</xp:td>
+			<xp:td>
+				<xp:inputText value="#{document1.Address}"
+					id="address1">
+				</xp:inputText>
+			</xp:td>
+		</xp:tr>
+		<xp:tr>
+			<xp:td></xp:td>
+			<xp:td>
+				<xp:button value="Submit" id="button1" rendered="#{javascript:document1.isEditable()}">
+					<xp:eventHandler event="onclick" submit="true"
+						refreshMode="complete" immediate="false" save="true"
+						id="eventHandler1">
+					</xp:eventHandler>
+				</xp:button>
+				<xp:button value="Edit" id="button2" rendered="#{javascript:!document1.isEditable()}"><xp:eventHandler event="onclick" submit="true" refreshMode="complete">
+	<xp:this.action>
+		<xp:changeDocumentMode mode="edit" var="document1"></xp:changeDocumentMode>
+	</xp:this.action></xp:eventHandler></xp:button></xp:td>
+		</xp:tr>
+	</xp:table></xp:view>

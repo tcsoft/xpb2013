@@ -4,6 +4,10 @@
 	xmlns:xc="http://www.ibm.com/xsp/custom">
 
 
+	<xp:this.resources>
+		<xp:script src="/xpCommon.jss" clientSide="false"></xp:script>
+	</xp:this.resources>
+	<xp:this.afterPageLoad><![CDATA[#{javascript:init();}]]></xp:this.afterPageLoad>
 	<xe:applicationLayout id="applicationLayout1">
 		<xp:callback facetName="facetMiddle" id="facetMiddle"></xp:callback>
 		<xp:this.facets>
@@ -18,7 +22,7 @@
 
 
 				</xe:this.footerLinks>
-				<xe:this.legalText><![CDATA[(C) 2012-2013 TC Soft Cunsulting Limited & Fynn Consulting Limited. Published under a creative commons licence.]]></xe:this.legalText>
+				<xe:this.legalText><![CDATA[(C) 2012-2013 TC Soft Consulting Limited & Fynn Consulting Limited. Published under a creative commons licence.]]></xe:this.legalText>
 			</xe:oneuiApplication>
 		</xe:this.configuration>
 	</xe:applicationLayout>

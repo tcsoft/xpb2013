@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<form name='Employee' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AF300348493'
+ publicaccess='false' designerversion='8.5.3' renderpassthrough='true'>
+<noteinfo noteid='306' unid='902FD35F2A0536DC80257AF3004368AA' sequence='4'>
+<created><datetime>20130114T121617,06+00</datetime></created>
+<modified><datetime>20130114T121915,81+00</datetime></modified>
+<revised><datetime>20130114T121915,80+00</datetime></revised>
+<lastaccessed><datetime>20130114T121915,81+00</datetime></lastaccessed>
+<addedtofile><datetime>20130114T121617,38+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<body><richtext>
+<pardef id='1'/>
+<par def='1'><field type='text' kind='editable' name='Name'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='7' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par>
+<par def='1'><field type='text' kind='editable' name='Email'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par>
+<par def='1'><field type='text' kind='editable' name='Telephone'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par>
+<par def='1'><field type='text' kind='editable' name='Address'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par></richtext></body>
+<item name='$$ScriptName' summary='false' sign='true'><text>Employee</text></item></form>
+

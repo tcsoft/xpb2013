@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="filter" replicaid="80257AF300348493" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="322" sequence="2" unid="BCFF18C3DC19A42B80257AF30044CD11">
+<created><datetime>20130114T123129,45+00</datetime></created>
+<modified><datetime>20130114T123156,53+00</datetime></modified>
+<revised><datetime>20130114T123156,52+00</datetime></revised>
+<lastaccessed><datetime>20130114T123156,53+00</datetime></lastaccessed>
+<addedtofile><datetime>20130114T123129,49+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name="$TITLE" sign="true"><text>xpCommon</text></item>
+<item name="$Flags"><text>.5834Q</text></item>
+<item name="$PublicAccess" sign="true"><text>1</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+</note>

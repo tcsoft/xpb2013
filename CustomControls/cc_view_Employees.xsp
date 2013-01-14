@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<xp:viewPanel rows="30" id="viewPanel1" pageName="/documentLockingEmployee.xsp">
+		<xp:this.facets>
+			<xp:pager partialRefresh="true" layout="Previous Group Next"
+				xp:key="headerPager" id="pager1">
+			</xp:pager>
+		</xp:this.facets>
+		<xp:this.data>
+			<xp:dominoView var="view1" viewName="Employees"></xp:dominoView>
+		</xp:this.data>
+		<xp:viewColumn columnName="Name" id="viewColumn1"
+			displayAs="link" openDocAsReadonly="true">
+			<xp:viewColumnHeader value="Name" id="viewColumnHeader1"></xp:viewColumnHeader>
+		</xp:viewColumn>
+		<xp:viewColumn columnName="Email" id="viewColumn2">
+			<xp:viewColumnHeader value="Email" id="viewColumnHeader2"></xp:viewColumnHeader>
+		</xp:viewColumn>
+		<xp:viewColumn columnName="Telephone" id="viewColumn3">
+			<xp:viewColumnHeader value="Telephone" id="viewColumnHeader3">
+			</xp:viewColumnHeader>
+		</xp:viewColumn>
+		<xp:viewColumn columnName="Address" id="viewColumn4">
+			<xp:viewColumnHeader value="Address" id="viewColumnHeader4">
+			</xp:viewColumnHeader>
+		</xp:viewColumn>
+	</xp:viewPanel>
+</xp:view>
