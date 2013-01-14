@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
-	xmlns:xe="http://www.ibm.com/xsp/coreex"
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex"
 	xmlns:xc="http://www.ibm.com/xsp/custom">
 
 
 	<xp:this.resources>
 		<xp:script src="/xpCommon.jss" clientSide="false"></xp:script>
+		<xp:metaData name="viewport"
+			content="width = device-width, initial-scale = 2.3, user-scalable = yes">
+		</xp:metaData>
+		<xp:metaData name="apple-mobile-web-app-capable" content="yes">
+		</xp:metaData>
+		<xp:metaData name="apple-mobile-web-app-status-bar-style"
+			content="black">
+		</xp:metaData>
 	</xp:this.resources>
 	<xp:this.afterPageLoad><![CDATA[#{javascript:init();}]]></xp:this.afterPageLoad>
 	<xe:applicationLayout id="applicationLayout1">
