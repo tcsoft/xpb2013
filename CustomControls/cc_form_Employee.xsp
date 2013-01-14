@@ -10,7 +10,12 @@
 				<xp:label value="Name:" id="name_Label1" for="name1"></xp:label>
 			</xp:td>
 			<xp:td>
-				<xp:inputText value="#{document1.Name}" id="name1"></xp:inputText>
+				<xp:inputText value="#{document1.Name}" id="name1">
+					<xp:this.attrs>
+						<xp:attr name="placeholder" value="John Smith">
+						</xp:attr>
+					</xp:this.attrs>
+				</xp:inputText>
 			</xp:td>
 		</xp:tr>
 		<xp:tr>
@@ -21,6 +26,10 @@
 			<xp:td>
 				<xp:inputText value="#{document1.Email}" id="email1"
 					type="email">
+					<xp:this.attrs>
+						<xp:attr name="placeholder" value="john@smith.com">
+						</xp:attr>
+					</xp:this.attrs>
 				</xp:inputText>
 			</xp:td>
 		</xp:tr>
@@ -32,6 +41,10 @@
 			<xp:td>
 				<xp:inputText value="#{document1.Telephone}" id="telephone1"
 					type="tel">
+					<xp:this.attrs>
+						<xp:attr name="placeholder" value="+44 (0) 1234 456789">
+						</xp:attr>
+					</xp:this.attrs>
 				</xp:inputText>
 			</xp:td>
 		</xp:tr>
@@ -42,6 +55,10 @@
 			</xp:td>
 			<xp:td>
 				<xp:inputText value="#{document1.Address}" id="address1">
+					<xp:this.attrs>
+						<xp:attr name="placeholder" value="My Building, My Street, My City, 12345">
+						</xp:attr>
+					</xp:this.attrs>
 				</xp:inputText>
 			</xp:td>
 		</xp:tr>
@@ -60,9 +77,8 @@
 					<xp:eventHandler event="onclick" submit="true"
 						refreshMode="complete">
 						<xp:this.action>
-							<xp:openPage
-								name="/documentLockingEmployee.xsp" target="editDocument"
-								documentId="#{javascript:document1.getDocument().getUniversalID()}">
+							<xp:openPage name="/documentLockingEmployee.xsp"
+								target="editDocument" documentId="#{javascript:document1.getDocument().getUniversalID()}">
 							</xp:openPage>
 						</xp:this.action>
 					</xp:eventHandler>
