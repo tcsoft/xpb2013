@@ -2,16 +2,29 @@
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core">
 
 	<xp:this.data>
-		<xp:dominoDocument var="document1" formName="Employee"
-			action="openDocument">
-		</xp:dominoDocument>
+		<xp:dominoView var="view1" viewName="Employees"></xp:dominoView>
 	</xp:this.data>
-	document1.Name<xp:br></xp:br>Name =
-	<xp:text escape="true" id="computedField2" value="#{document1.Name}"></xp:text>
-	<xp:br></xp:br>
-	<xp:br></xp:br>#{document1.Name} #{javascript:document1.getItemValueSring(&quot;Email&quot;)}
-	<xp:br></xp:br>
-	Name and Email =
-	<xp:text escape="true" id="computedField1">
-		<xp:this.value><![CDATA[#{document1.Name} #{javascript:document1.getItemValueString("Email")}]]></xp:this.value>
-	</xp:text></xp:view>
+	<xp:viewPanel rows="30" value="#{view1}" id="viewPanel1" pageName="/expressionLanguageEmployee.xsp">
+		<xp:this.facets>
+			<xp:pager partialRefresh="true" layout="Previous Group Next"
+				xp:key="headerPager" id="pager1">
+			</xp:pager>
+		</xp:this.facets>
+		<xp:viewColumn columnName="Name" id="viewColumn1" displayAs="link" openDocAsReadonly="true">
+			<xp:viewColumnHeader value="Name" id="viewColumnHeader1"></xp:viewColumnHeader>
+		</xp:viewColumn>
+		<xp:viewColumn columnName="Email" id="viewColumn2">
+			<xp:viewColumnHeader value="Email" id="viewColumnHeader2"></xp:viewColumnHeader>
+		</xp:viewColumn>
+		<xp:viewColumn columnName="Telephone" id="viewColumn3">
+			<xp:viewColumnHeader value="Telephone"
+				id="viewColumnHeader3">
+			</xp:viewColumnHeader>
+		</xp:viewColumn>
+		<xp:viewColumn columnName="Address" id="viewColumn4">
+			<xp:viewColumnHeader value="Address"
+				id="viewColumnHeader4">
+			</xp:viewColumnHeader>
+		</xp:viewColumn>
+	</xp:viewPanel>
+</xp:view>

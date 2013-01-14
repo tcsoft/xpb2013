@@ -3,4 +3,4 @@
 	xmlns:xc="http://www.ibm.com/xsp/custom">
 
 	<xc:cc_UI><xp:this.facets>
-	<xc:cc_thinkMobileMetaTags xp:key="facetMiddle"></xc:cc_thinkMobileMetaTags></xp:this.facets></xc:cc_UI></xp:view>
+	<xc:cc_expressionLanguageEmployee xp:key="facetMiddle"></xc:cc_expressionLanguageEmployee></xp:this.facets></xc:cc_UI></xp:view>
