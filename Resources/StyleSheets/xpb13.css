@@ -1,3 +1,7 @@
 .lotusMenuSubsection li{
 margin-left:15px;
 }
+
+.alert{
+	color: red;
+}

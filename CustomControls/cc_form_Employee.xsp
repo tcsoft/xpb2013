@@ -15,8 +15,7 @@
 		</xp:tr>
 		<xp:tr>
 			<xp:td>
-				<xp:label value="Email:" id="email_Label1"
-					for="email1">
+				<xp:label value="Email:" id="email_Label1" for="email1">
 				</xp:label>
 			</xp:td>
 			<xp:td>
@@ -27,40 +26,55 @@
 		</xp:tr>
 		<xp:tr>
 			<xp:td>
-				<xp:label value="Telephone:" id="telephone_Label1"
-					for="telephone1">
+				<xp:label value="Telephone:" id="telephone_Label1" for="telephone1">
 				</xp:label>
 			</xp:td>
 			<xp:td>
-				<xp:inputText value="#{document1.Telephone}"
-					id="telephone1" type="tel">
+				<xp:inputText value="#{document1.Telephone}" id="telephone1"
+					type="tel">
 				</xp:inputText>
 			</xp:td>
 		</xp:tr>
 		<xp:tr>
 			<xp:td>
-				<xp:label value="Address:" id="address_Label1"
-					for="address1">
+				<xp:label value="Address:" id="address_Label1" for="address1">
 				</xp:label>
 			</xp:td>
 			<xp:td>
-				<xp:inputText value="#{document1.Address}"
-					id="address1">
+				<xp:inputText value="#{document1.Address}" id="address1">
 				</xp:inputText>
 			</xp:td>
 		</xp:tr>
 		<xp:tr>
 			<xp:td></xp:td>
 			<xp:td>
-				<xp:button value="Submit" id="button1" rendered="#{javascript:document1.isEditable()}">
+				<xp:button value="Submit" id="button1">
+					<xp:this.rendered><![CDATA[#{javascript:document1.isEditable() && !viewScope.containsKey("locked")}]]></xp:this.rendered>
 					<xp:eventHandler event="onclick" submit="true"
-						refreshMode="complete" immediate="false" save="true"
-						id="eventHandler1">
+						refreshMode="complete" immediate="false" save="true" id="eventHandler1">
 					</xp:eventHandler>
 				</xp:button>
-				<xp:button value="Edit" id="button2" rendered="#{javascript:!document1.isEditable()}"><xp:eventHandler event="onclick" submit="true" refreshMode="complete">
-	<xp:this.action>
-		<xp:changeDocumentMode mode="edit" var="document1"></xp:changeDocumentMode>
-	</xp:this.action></xp:eventHandler></xp:button></xp:td>
+				<xp:button value="Edit" id="button2">
+
+					<xp:this.rendered><![CDATA[#{javascript:!document1.isEditable() && !viewScope.containsKey("locked")}]]></xp:this.rendered>
+					<xp:eventHandler event="onclick" submit="true"
+						refreshMode="complete">
+						<xp:this.action>
+							<xp:openPage
+								name="/documentLockingEmployee.xsp" target="editDocument"
+								documentId="#{javascript:document1.getDocument().getUniversalID()}">
+							</xp:openPage>
+						</xp:this.action>
+					</xp:eventHandler>
+				</xp:button>
+				<xp:div id="documentlocked" styleClass="alert">
+					<xp:this.rendered><![CDATA[#{javascript:viewScope.containsKey("locked")}]]></xp:this.rendered>
+					<strong>Warning!</strong>
+					<xp:text id="lockdetails" tagName="div">
+						<xp:this.value><![CDATA[#{javascript:"This document has been locked by " + @Name("[CN]", viewScope.locked.person) + " at " + viewScope.locked.time}]]></xp:this.value>
+					</xp:text>
+				</xp:div>
+			</xp:td>
 		</xp:tr>
-	</xp:table></xp:view>
+	</xp:table>
+</xp:view>

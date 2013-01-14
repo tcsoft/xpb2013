@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="80257AF300348493" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="312" sequence="5" unid="335BA767DAFD4E1480257AF30043E0B9">
+<noteinfo noteid="312" sequence="10" unid="335BA767DAFD4E1480257AF30043E0B9">
 <created><datetime>20130114T122124,41+00</datetime></created>
-<modified><datetime>20130114T122400,98+00</datetime></modified>
-<revised><datetime>20130114T122400,97+00</datetime></revised>
-<lastaccessed><datetime>20130114T122400,98+00</datetime></lastaccessed>
+<modified><datetime>20130114T123921,41+00</datetime></modified>
+<revised><datetime>20130114T123921,40+00</datetime></revised>
+<lastaccessed><datetime>20130114T123921,41+00</datetime></lastaccessed>
 <addedtofile><datetime>20130114T122124,42+00</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
@@ -11,6 +11,12 @@
 <item name="$TITLE"><text>cc_form_Employee.xsp</text></item>
 
 
-<item name="$FileNames" sign="true"><text>cc_form_Employee.xsp</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
 
-</note>
+
+
+
+
+
+
+<item name="$FileNames" sign="true"><text>cc_form_Employee.xsp</text></item></note>
