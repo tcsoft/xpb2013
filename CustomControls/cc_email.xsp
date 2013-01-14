@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<xp:table style="width:100.0%">
+		<xp:tr>
+			<xp:td>
+				<xp:label id="label1" value="To:" for="sendto"></xp:label>
+			</xp:td>
+			<xp:td>
+				<xp:inputText id="sendto" value="#{viewScope.sendto}"></xp:inputText>
+			</xp:td>
+		</xp:tr>
+		
+		
+		<xp:tr>
+			<xp:td>
+				<xp:label value="Subject:" id="label4"></xp:label></xp:td>
+			<xp:td><xp:inputText id="subject" value="#{viewScope.subject}"></xp:inputText></xp:td>
+		</xp:tr>
+		<xp:tr>
+			<xp:td></xp:td>
+			<xp:td>
+				<xp:inputTextarea id="body" value="#{viewScope.body}"></xp:inputTextarea></xp:td>
+		</xp:tr>
+	<xp:tr><xp:td></xp:td><xp:td>
+	<xp:button value="Send" id="button1">
+		<xp:eventHandler event="onclick" submit="true" refreshMode="complete">
+			<xp:this.action>
+
+				<xp:actionGroup>
+					<xp:executeScript>
+						<xp:this.script><![CDATA[#{javascript:emailBean.setSendTo(viewScope.sendto);
+emailBean.setSubject(viewScope.subject);
+emailBean.addHTML(viewScope.body);
+emailBean.send();}]]></xp:this.script>
+					</xp:executeScript><xp:openPage name="/managedBeans.xsp"></xp:openPage>
+					
+				</xp:actionGroup>
+			</xp:this.action></xp:eventHandler></xp:button></xp:td></xp:tr></xp:table></xp:view>
