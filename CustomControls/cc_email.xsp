@@ -31,9 +31,12 @@
 					<xp:executeScript>
 						<xp:this.script><![CDATA[#{javascript:emailBean.setSendTo(viewScope.sendto);
 emailBean.setSubject(viewScope.subject);
+emailBean.setSenderEmail("matthew.white@fclonline.com");
+emailBean.setSenderName("Matt White");
 emailBean.addHTML(viewScope.body);
 emailBean.send();}]]></xp:this.script>
-					</xp:executeScript><xp:openPage name="/managedBeans.xsp"></xp:openPage>
-					
+					</xp:executeScript>
+					<xp:openPage name="/managedBeans.xsp"></xp:openPage>
+
 				</xp:actionGroup>
 			</xp:this.action></xp:eventHandler></xp:button></xp:td></xp:tr></xp:table></xp:view>
